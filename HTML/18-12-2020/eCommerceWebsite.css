@@ -1,0 +1,291 @@
+html {
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	user-select: none;
+	-webkit-user-select: none;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 300px;
+	width: 100%;
+	background-image: linear-gradient(
+						to bottom,
+						cyan,
+						royalblue
+						);
+	color: whitesmoke;
+	text-align: center;
+	margin: 0;
+}
+header h1 {
+	text-shadow: -1px 2px 3px #a9a9a9;
+	line-height: 3;
+}
+
+nav {
+	position: relative;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-flow: wrap;
+	margin: 19px 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul > li {
+	margin: 12px 0;
+}
+
+nav ul > li > a{
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	padding: 7px;
+	width: inherit;
+	border-radius: 3px;
+	height: inherit;
+	box-shadow: 2px 5px 24px -10px #9a9a9a;
+	transition: all ease 400ms;
+	border: 1px solid #a9a9a9;
+}
+
+nav ul > li > a:active {
+	color: whitesmoke;
+	background-color: #34fe12;
+}
+
+nav ul > li > a:checked {
+	color: navy;
+	background-color: #34fe12;
+}
+
+nav ul > li > a:hover {
+	background-color: rgba(34,34,34,.5);
+	color: whitesmoke;
+	box-shadow: 2px 5px 24px -10px #303030;
+}
+
+article {
+	margin: 24px auto;
+	display: grid;
+	place-items: center;
+}
+
+article section {
+	margin: 24px auto;
+	display: grid;
+	place-items: center;
+}
+
+article section > form > label {
+	font-size: 1.1rem;
+}
+
+article section > form > input {
+	display: block;
+	padding: 12px;
+	margin-top: 12px;
+	border-radius: 7px;
+	outline: none;
+	border: 2px solid #333333;
+	font-size: 1.2rem;
+}
+
+article section > form > input[type="checkbox"],
+article section > form > input[type="radio"] {
+	display: inline-block;
+}
+
+article section > form > select {
+	display: inline;
+	margin-top: 12px;
+}
+
+article section > form > input[type="button"] {
+	width: 50%;
+}
+
+.productTable > table {
+	border-collapse: collapse;
+	padding: 12px;
+	border: 0;
+	border-color: transparent;
+}
+
+.productTable > table > tr:nth-child(even) {
+	background-color: #919191;
+	padding: 12px;
+}
+
+.productTable > table > tr > th,
+.productTable > table > tr > td {
+		text-align: center;
+		font-size: 1.2rem;
+		padding: 12px;
+}
+
+.productTable > table > tr {
+	border-bottom: 2px solid #545454;
+	padding: 12px;
+}
+
+tr {
+	border: 0;
+	border-color: transparent;
+}
+
+article .productTable > table > caption {
+	margin-bottom: 12px;
+	padding-bottom: 3px;
+	border-color: transparent;
+	border-bottom:2px solid #343434;
+	font-weight: bold;
+	font-size: 1.6rem;
+	width: max-content;
+	height: auto;
+}
+
+th {
+	background-color: rgba(233,133,12,.5);
+	border-color: transparent;
+}
+
+th,td {
+	padding: 12px;
+	border-bottom: 1px solid #919191;
+}
+
+tr:nth-child(odd) {
+	background-color: #cdcdcd;
+}
+
+article section > form > a {
+	color: tomato;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+article section > form > a:hover {
+	color: lime;
+	background-color: rgba(189,234,12,.4);
+}
+
+article section > form > select {
+	padding: 12px;
+	border: 2px solid #333333;
+	border-radius: 3px;
+	display: flex;
+	flex-flow: wrap;
+}
+
+article section > .product {
+	height: max-content;
+	width: 50%;
+	border-radius: 7px;
+	box-shadow: 0 6px 34px -23px #393939;
+	transition: all ease-out 600ms;
+	padding: 12px;
+	text-align: center;
+	margin: 12px auto;
+	border: 1px solid #eaeaea;
+}
+
+article section > .product:hover {
+	background-color: skyblue;
+	color: yellow;
+}
+
+
+article section > h2 {
+	margin-bottom: 12px;
+}
+
+article section > p {
+	text-align: justify;
+	width: 80%;
+	font-size: 1.3rem;
+}
+
+.careers {
+	list-style: none;
+}
+
+.careerHeading {
+	padding: 3px;
+	width: max-content;
+	border-bottom: 2px solid #454545;
+}
+
+.careers > li{
+	font-size: 1.4rem;
+	line-height: 2;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
