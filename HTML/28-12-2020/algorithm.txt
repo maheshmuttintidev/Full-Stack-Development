@@ -1,0 +1,30 @@
+
+Implement like and dislike feature of youtube
+
+Algorithm :
+-----------
+	
+	step-1 : Bring in the thumsup and thumsdown symbols
+	
+	step-2 : Make thumsup and thumsdown icons clickable
+
+	step-3 : Assign functions to thumsup and thumsdown
+
+	step-4 : Create two global variables for holding the current values of thumsup and thumsdown
+
+	step-5 : Increment value by 1 and update the value in UI
+
+
+Algorithm :
+-----------
+
+	step-1 : Bring in the thumsup and thumsdown symbols
+	
+	step-2 : Make thumsup and thumsdown icons clickable
+
+	step-3 : Assign functions to thumsup and thumsdown icons
+	
+	step-4 : Create two global variables for holding the current values of thumsup and thumsdown
+
+	step-5 : Increment value by 1 once and break the value update the value in UI
+
