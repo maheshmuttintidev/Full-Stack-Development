@@ -2,25 +2,23 @@
 	<head>
 		<title>Login Details using Object keys and values</title>
 	</head>
-	<body style="font-family: verdana;font-size:1.2em;line-height: 1.5;">
-		<form align="center" style="width: 350px;padding: 24px; margin: auto;border: 3px solid #323232; border-radius: 12px;background-color: tomato; background-image: linear-gradient(to bottom, lime, yellow, tomato);">
-			<input type="text" id="username" /><br />
-			<input type="password" id="password" /><br />
-			<button onclick="getDetails()">Login</button>
-		</form>
-		<script type="text/javascript">
-			function getDetails() {
-				var username = document.getElementById("username").value
-				var password = document.getElementById("password").value
+	<body>
+	<input type="text" id="username" /><br />
+	<input type="password" id="password" /><br />
+	<button onclick="getDetails()">Login</button>
+	<script type="text/javascript">
+		function getDetails() {
+			var username = document.getElementById("username").value
+			var password = document.getElementById("password").value
 
-				var obj = {
-					username : username,
-					password : password
-				}
-				alert(obj.username+"\n"+obj.password)
-
-				console.log(obj.username+"\n"+obj.password)
+			var obj = {
+				username : username,
+				password : password
 			}
+			alert(obj.username+"\n"+obj.password)
+
+			console.log(obj.username+"\n"+obj.password)
+		}
 		</script>
 	</body>
 </html>
