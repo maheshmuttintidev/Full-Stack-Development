@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Calculator</title>
+	</head>
+	<body>
+	<input type="number" id="first_number" /><br />
+	<input type="number" id="second_number" /><br />
+	<button onclick="add()">ADD</button>
+	<button onclick="subtract()">SUBTRACT</button>
+	<script type="text/javascript">
+		function add() {
+			var first_number = document.getElementById('first_number').value
+			var last_number = document.getElementById('second_number').value
+
+			first_number = parseInt(first_number)
+			last_number = parseInt(last_number)
+
+			alert("addition of "+first_number+" and "+second_number+" is "+(first_number+last_number))
+
+		}
+		function subtract() {
+			var first_number = document.getElementById('first_number').value
+			var last_number = document.getElementById('second_number').value
+
+			first_number = parseInt(first_number)
+			last_number = parseInt(last_number)
+
+			alert("addition of "+first_number+" and "+second_number+" is "+(first_number-last_number))
+
+		}
+		</script>
+	</body>
+</html>
