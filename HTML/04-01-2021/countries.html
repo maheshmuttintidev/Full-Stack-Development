@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Dynamic Country Selection</title>
+                <link href="../../CSS/04-01-2021/countries.css" rel="stylesheet" />
+                <script type="text/javascript" src="../../JS/04-01-2021/countries.js"></script>
+        </head>
+        <body>
+                <h1>Simple Selection of Country and State</h1>
+                <label for="country">Select Country</label><br />
+                <select id="country" name="country" onchange="getStatesList()">
+                        
+                        <option value="Select Country">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Australia">Australia</option>
+                </select>
+                <br /><br />
+                <label for="states">Select State</label><br />
+                <select id="states">
+                        <option value="Select State">Select State</option>
+                </select>
+
+                <h6 class="author">Author: <span style="color: navy;font-size: small">Mahesh Muttinti</span></h6>
+        </body>
+</html>
+
+
