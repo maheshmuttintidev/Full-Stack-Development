@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Product Item Selection</title>
+                <link href="../../CSS/myTheme.css" rel="stylesheet" />
+                <link href="../../CSS/04-01-2021/productItems.css" rel="stylesheet" />
+                <script type="text/javascript" src="../../JS/04-01-2021/productItems.js"></script>
+                <script type="text/javascript" src="../../JS/localTimeandDate.js"></script> 
+        </head>
+        <body>
+                <h1 class="main-heading">Product Items Selection</h1>
+                <label for="productItems">Select Product Item</label><br />
+                <select id="productItems" name="productItems" onchange="getProductsList()">
+                        
+                        <option value="Select Country">Select Product Item</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="HeadPhone">HeadPhone</option>
+                        <option value="AirPod">AirPod</option>
+                        <option value="PlayStation">PlayStation</option>
+                </select>
+                <br /><br />
+                <section class="card" id="card"></section>
+                <h6 class="author">Author: <span style="color: navy;font-size: small">Mahesh Muttinti</span></h6>
+        </body>
+</html>
