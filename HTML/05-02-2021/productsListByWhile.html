@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Getting Product Lists by while loop</title>
+                <link href="../../CSS/myTheme.css" rel="stylesheet" />
+                <script type="text/javascript" src="../../JS/05-01-2021/whileProducts.js"></script>
+                <script type="text/javascript" src="../../JS/localTimeandDate.js"></script>
+                <style>
+                        .card-content {
+                                border: 2px solid #000;
+                                margin: 12px auto;
+                                border-radius: 7px;
+                        }
+                        .card-content > img {
+                                height: 300px;
+                                width: 350px;
+                                border-top-left-radius: inherit;
+                                border-top-right-radius: inherit;
+                        }
+                        .card-content > p {
+                                padding: 0 12px;
+                                width: 350px;
+                        }
+                        span {
+                                color: #000;
+                        }
+                </style>
+        </head>
+        <body>
+                <h1 class="main-heading">Getting Product Lists by While Loop</h1>
+                <div id="card"></div>
+                <h6 class="author" id="author">Author: <span style="color: navy;font-size: small">Mahesh Muttinti</span></h6>
+                <script type="text/javascript">
+                        const products = [
+                                {
+                                        name: "Smart Plug Esicoo - A Certified Works with Alexa, Echo & Google Home –Only Cloud Intelligence App- Only WiFi 2.4G (4 Pack)",
+                                        price: "$21.97 ",
+                                        rating: "4",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/712Q43g6wyL._AC_SL1500_.jpg",
+                                        brand: "Esicoo"
+                                },
+                                {
+                                        name: "Seek Thermal Compact – All-Purpose Thermal Imaging Camera for Android MicroUSB",
+                                        price: "$207.07",
+                                        rating: "4",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/71tQnrbnv6L._AC_SL1500_.jpg",
+                                        brand: "Seek Thermal"
+                                },
+                                {
+                                        name: "ecobee3 lite Smart Thermostat, 2nd gen",
+                                        price: "$169.00",
+                                        rating: "4.6",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/71cWT-4o9WL._AC_SL1500_.jpg",
+                                        brand: "Ecobee"
+                                },
+                                {
+                                        name: "Wyze Cam 1080p HD Indoor Wireless Smart Home Camera with Night Vision, 2-Way Audio, Works with Alexa & the Google Assistant (Pack of 2), White - WYZEC2X2",
+                                        price: "$39",
+                                        rating: "4.6",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/61prs9ArY1L._AC_SL1500_.jpg",
+                                        brand: "WYZE"
+                                },
+                                {
+                                        name: "FLIR MR160 - Thermal Imaging Moisture Meter - with IGM (Infrared Guided Measurement), Pin and Pinless",
+                                        price: "$599.99",
+                                        rating: "4.2",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/81MFSM%2Bm1DL._AC_SL1500_.jpg",
+                                        brand: "FLIR Systems"
+                                },
+                                {
+                                        name: "NOYAFA Thermal Imaging Device Industry& Science Infrared Thermometer",
+                                        price: "$162.61",
+                                        rating: "2.5",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/51vzG04fT7L._SL1000_.jpg",
+                                        brand: "NOYAFA"
+                                },
+                                {
+                                        name: "DEPSTECH Wireless Endoscope, IP67 Waterproof WiFi Borescope Inspection 2.0 Megapixels HD Snake Camera for Android and iOS Smartphone, iPhone, Samsung, Tablet -Black(11.5FT)",
+                                        price: "$46.98",
+                                        rating: "4.5",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/71XUR44-osL._AC_SL1500_.jpg",
+                                        brand: "DEPSTECH"
+                                },
+                                {
+                                        name: "320 x 240 IR Resolution Thermal Camera, Pocket-Sized Infrared Camera with 76800 Pixels Real-Time Thermal Image, Temperature Measurement Range -4°F to 572°F, Mini IR Thermal Imager, Hti-Xintai",
+                                        price: "$529.99",
+                                        rating: "4.4",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/61Is3ZsyfyL._AC_SL1500_.jpg",
+                                        brand: "Hti-Xintai"
+                                },
+                                {
+                                        name: "ThermoPro TP-16 Large LCD Digital Cooking Food Meat Smoker Oven Kitchen BBQ Grill Thermometer Clock Timer with Stainless Steel Probe",
+                                        price: "$17.99",
+                                        rating: "4.5",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/61HxU0529RL._AC_SL1000_.jpg",
+                                        brand: "ThermoPro"
+                                },
+                                {
+                                        name: "Mpow 051 Car Phone Mount, CD Slot Car Phone Holder, Car Mount with Three-Side Grips and One-Touch Design Compatible iPhone 12/12Mini/12Pro/12Pro Max/11 Series/XR/X/8/8Plus, Galaxy S10/20 Series/S9/S9+",
+                                        price: "$9.38",
+                                        rating: "4.4",
+                                        image: "https://images-na.ssl-images-amazon.com/images/I/61pttE-yVsL._AC_SL1500_.jpg",
+                                        brand: "Mpow"
+                                }
+                        ]
+
+                        const card = document.getElementById("card")
+                        var item = 0,
+                        length = products.length
+                        while(item < length) {
+                                card.innerHTML += `
+                                                <div class="card-content">
+                                                        <img src='${products[item].image}' />
+                                                        <p style='color: red'><span>Product Name:</span> ${products[item].name}</p>
+                                                        <p style='color: blue'><span>Brand:</span> ${products[item].brand}</p>
+                                                        <p style='color: black'><span>Price:</span> ${products[item].price}</p>
+                                                        <p style='color: gold'><span>Rating:</span> ${products[item].rating}</p>
+                                                </div>
+                                        `
+                                item++
+                        }
+
+                </script>
+        </body>
+</html>
+
+
