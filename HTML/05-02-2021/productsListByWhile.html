@@ -5,31 +5,59 @@
                 <link href="../../CSS/myTheme.css" rel="stylesheet" />
                 <script type="text/javascript" src="../../JS/05-01-2021/whileProducts.js"></script>
                 <script type="text/javascript" src="../../JS/localTimeandDate.js"></script>
-                <style>
+                <style type="text/css">
+                        header {
+                            background-color: skyblue;
+                            height: 100vh;
+                            width: 100%;
+                            clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 85% 84%, 55% 90%, 15% 95%, 0 85%, 0% 35%, 0 0);  
+                            background-image: url("../../assets/playstation.jpg");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            padding: 0;
+                            background-blend-mode: hard-light;
+                            box-shadow:0 12px 30px -20px #444444;
+                            filter: drop-shadow(2px 3px 12px #333);
+                        }
                         .card-content {
-                                border: 2px solid #000;
                                 margin: 12px auto;
                                 border-radius: 7px;
+                                width: 80%;
+                                display: flex;
+                                flex-flow: wrap;
+                                justify-content: space-evenly;
+                                align-items: flex-start;
+                                box-shadow: 0 2px 10px -5px #131313;
+                                border: 2px solid dodgerblue;
                         }
                         .card-content > img {
                                 height: 300px;
                                 width: 350px;
-                                border-top-left-radius: inherit;
-                                border-top-right-radius: inherit;
+                                border-radius: inherit;
                         }
                         .card-content > p {
-                                padding: 0 12px;
+                                padding: 7px 12px;
                                 width: 350px;
+                                font-size: 80%;
+                                text-shadow: 1px 2px 3px #000;
                         }
                         span {
                                 color: #000;
                         }
+                        .card-image {
+                                height: 350px;
+                                width: 300px;
+                        }
                 </style>
         </head>
         <body>
-                <h1 class="main-heading">Getting Product Lists by While Loop</h1>
-                <div id="card"></div>
-                <h6 class="author" id="author">Author: <span style="color: navy;font-size: small">Mahesh Muttinti</span></h6>
+                <header>
+                        <h1 class="main-heading">Getting Product Lists by While Loop</h1>
+                </header>
+                <section>
+                        <div id="card"></div>
+                </section>
+                <h6 class="author" id="author">Author: <span style="color: gold; font-size: small">Mahesh Muttinti</span></h6>
                 <script type="text/javascript">
                         const products = [
                                 {
@@ -113,8 +141,8 @@
                                                         <img src='${products[item].image}' />
                                                         <p style='color: red'><span>Product Name:</span> ${products[item].name}</p>
                                                         <p style='color: blue'><span>Brand:</span> ${products[item].brand}</p>
-                                                        <p style='color: black'><span>Price:</span> ${products[item].price}</p>
-                                                        <p style='color: gold'><span>Rating:</span> ${products[item].rating}</p>
+                                                        <p style='color: #12e316'><span>Price:</span> ${products[item].price}</p>
+                                                        <p style='color: yellow'><span>Rating:</span> ${products[item].rating}</p>
                                                 </div>
                                         `
                                 item++
