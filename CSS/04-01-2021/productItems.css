@@ -1,6 +1,7 @@
 #product-price, #product-brand {
-	line-height: 1 !important;
+	line-height: 1.5 !important;
 	font-size: 1.2em;
+	font-weight: normal;
 }
 #product-brand {
 	color: forestgreen;
