@@ -7,26 +7,25 @@ function getStatesList() {
         switch(country) {
                 case "India":
                         states.innerHTML = `
-
                                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
                                 <option value="Assam">Assam</option>
                                 <option value="Bihar">Bihar</option>
                                 <option value="Chhattisgarh">Chhattisgarh</option>
-                                <option value=" Goa">   Goa</option>
+                                <option value=" Goa">Goa</option>
                                 <option value="Gujarat">Gujarat</option>
-                                <option value=" Haryana">       Haryana</option>
+                                <option value=" Haryana">Haryana</option>
                                 <option value="Himachal Pradesh">Himachal Pradesh</option>
-                                <option value=" Jharkhand">     Jharkhand</option>
+                                <option value=" Jharkhand">Jharkhand</option>
                                 <option value="Karnataka">Karnataka</option>
-                                <option value=" Kerala">        Kerala</option>
+                                <option value=" Kerala">Kerala</option>
                                 <option value="Madhya Pradesh">Madhya Pradesh</option>
                                 <option value="Maharashtra">Maharashtra</option>
-                                <option value=" Manipur">       Manipur</option>
+                                <option value=" Manipur">Manipur</option>
                                 <option value="Meghalaya">Meghalaya</option>
-                                <option value=" Mizoram">       Mizoram</option>
+                                <option value=" Mizoram">Mizoram</option>
                                 <option value="Nagaland">Nagaland</option>
-                                <option value=" Odisha">        Odisha</option>
+                                <option value=" Odisha">Odisha</option>
                                 <option value="Punjab">Punjab</option>
                                 <option value="Rajasthan">Rajasthan</option>
                                 <option value="Sikkim">Sikkim</option>
@@ -40,7 +39,6 @@ function getStatesList() {
                         break
                 case "Spain":
                         states.innerHTML = `
-
                                 <option value="Álava">Álava</option>
                                 <option value="Albacete">Albacete</option>
                                 <option value="Alicante">Alicante</option>
@@ -88,7 +86,6 @@ function getStatesList() {
                                 <option value="Teruel">Teruel</option>
                                 <option value="Toledo">Toledo</option>
                                 <option value="Valencia">Valencia</option>
-
                                 <option value="Valladolid">Valladolid</option>
                                 <option value="Zamora">Zamora</option>
                                 <option value="Zaragoza">Zaragoza</option>
@@ -99,21 +96,19 @@ function getStatesList() {
 
                         case "Qatar":
                                 states.innerHTML = `
-
-                                        <option value="Ad Dawḩah">Ad Dawḩah</option>
-                                        <option value="Al Khawr">Al Khawr</option>
-                                        <option value="Al Jumaliyah">Al Jumaliyah</option>
-                                        <option value="Ar Rayyān">Ar Rayyān</option>
-                                        <option value="Madinat ach Shamal">Madinat ach Shamal</option>
-                                        <option value="Umm Sa'id">Umm Sa'id</option>
-                                        <option value="Umm Şalāl">Umm Şalāl</option>
-                                        <option value="Al Wakrah">Al Wakrah</option>
-                                        <option value="Al Wakrah Municipality">Al Wakrah Municipality</option>
-                                `
+                                <option value="Ad Dawḩah">Ad Dawḩah</option>
+                                <option value="Al Khawr">Al Khawr</option>
+                                <option value="Al Jumaliyah">Al Jumaliyah</option>
+                                <option value="Ar Rayyān">Ar Rayyān</option>
+                                <option value="Madinat ach Shamal">Madinat ach Shamal</option>
+                                <option value="Umm Sa'id">Umm Sa'id</option>
+                                <option value="Umm Şalāl">Umm Şalāl</option>
+                                <option value="Al Wakrah">Al Wakrah</option>
+                                <option value="Al Wakrah Municipality">Al Wakrah Municipality</option>
+                        `
                         break
                 case "Egypt":
                         states.innerHTML = `
-
                                 <option value="Muhafazat Suhaj">Muhafazat Suhaj</option>
                                 <option value="Muhafazat Shamal Sina">Muhafazat Shamal Sina</option>
                                 <option value="Muhafazat Qina">Muhafazat Qina</option>
@@ -145,14 +140,11 @@ function getStatesList() {
                 break
                 case "Australia":
                         states.innerHTML = `
-
                                 <option value="New South Wales">New South Wales</option>
                                 <option value="Victoria">Victoria</option>
                                 <option value="Queensland">Queensland</option>
                                 <option value="Western Australia">Western Australia</option>
-                                <option value="South Australia
-                        ">South Australia
-                        </option>
+                                <option value="South Australia">South Australia</option>
                                 <option value="Tasmania">Tasmania</option>
                         `
                 break

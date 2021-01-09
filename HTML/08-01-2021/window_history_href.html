@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>	 
+	<title>Page Title</title>
+</head>
+<body>
+	<input type="number" placeholder="Enter mobile number" id="number" />
+	<button onclick="getOtp()">get otp</button><br />
+	<input type="password" placeholder="password" id="password" /><br />
+	<input type="text" placeholder="otp" id="otp" /><br />
+	<button onclick="gotoPage()">submit</button>
+	<script>
+		function getOtp() {
+			if(number.value == 9603757304) {
+				alert("your otp is 0213")
+			} else {
+				alert("invalid phone number")
+			}
+		}
+		function gotoPage() {
+			const redirect = function(res) {
+				//event.preventDefault()
+				if(res == true) {
+					console.log("res: "+res)
+					window.location.href = "index.html"
+					redirect = null
+				}
+				else {
+					console.log("wrong credentials")
+					redirect = null
+				}
+			}
+			if(password.value == "login123" && otp.value == "0213") {
+				redirect(true)
+			}
+			else if(password.value != "login123" && otp.value == "0213"){
+				alert("invalid password")
+			}
+			else if(password.value == "login123" && otp.value != "0213"){
+				alert("invalid otp")
+			}
+			else {
+				alert("invalid password and otp")
+				redirect(false)
+			}
+		}
+	</script>
+</body>
+</html>

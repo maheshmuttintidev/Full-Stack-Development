@@ -1,6 +1,6 @@
 function getStatesList() {
-        var country = document.getElementById("country").value,
-        states = document.getElementById("states")
+        const country = document.getElementById("country").value,
+                states = document.getElementById("states")
 
         const indiaStates = ["Andhra Pradesh","Arunachal Pradesh","Assam","Chhattisgarh","Goa","Tamil Nadu","Telangana"],
                 spainStates = ["Álava","Albacete","Alicante","Asturias","Ávila","Badajoz"],
@@ -25,27 +25,27 @@ function getStatesList() {
                         break
                 case "Qatar":
                         for(let state of qatarStates) {
-                                states.innerHTML += `
+                                states.innerHTML = `
                                         <option value="${state}">${state}</option>
                                 `
                         }
                         break
                 case "Egypt":
                         for(let state of egyptStates) {
-                                states.innerHTML += `
+                                states.innerHTML = `
                                         <option value="${state}">${state}</option>
                                 `
                         }
                         break
                 case "Australia":
                         for(let state of australiaStates) {
-                                states.innerHTML += `
+                                states.innerHTML = `
                                         <option value="${state}">${state}</option>
                                 `
                         }
                         break
                 default:
-                        states.innerHTML = `<option value='Select State'>Select State</option>`
+                        document.getElementById("states").innerHTML = `<option value='Select State'>Select State</option>`
 
         }
 }
