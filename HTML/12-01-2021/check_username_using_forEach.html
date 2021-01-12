@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check username exists or not using array forEach Method</title>
+</head>
+<body>
+	<input type="text" id="username" name="username"><br>
+	<button onclick="isExistsUserName()">Check Username</button>
+	<script type="text/javascript">
+		function isExistsUserName() {
+			debugger;
+			event.preventDefault()
+			var new_username = document.getElementById("username").value
+			var existed_usernames = ['mahesh', 'rajesh', 'satish', 'ganesh', 'ramesh', 'suresh', 'nagesh', 'rakesh']
+			var isExist = false
+			existed_usernames.forEach(function(existed_username) {
+				if(new_username == existed_username) {
+					isExist = true
+				}
+			})
+			isExist == true ? alert("username already exists!") : alert("new username is available to use and successfully added to database!")
+		}
+	</script>
+</body>
+</html>
