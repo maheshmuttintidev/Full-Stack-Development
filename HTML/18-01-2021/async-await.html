@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Async-Await in JS</title>
+	<script type="text/javascript" src="../JS/18-01-2021/async-await.js"></script>
+</head>
+<body>
+	<p id="json"></p> -->
+	<script>
+
+		// (function() {
+		// 	var http = new XMLHttpRequest()
+		// 	http.onreadystatechange = function() {
+		// 		http.open('GET','../JSON/config.json')
+		// 		http.send()
+		// 		console.log(http.responseText)
+		// 	}
+		// })()
+
+		// (function() {
+
+		// 		var http = new XMLHttpRequest()
+		// 		http.open('GET', '../../../JSON/config.json')
+		// 		http.send()
+		// 		http.onreadystatechange= function() {
+		// 			// if(http.status == 200){
+		// 			// 	var data = JSON.parse(http.responseText)
+		// 			// 	console.log(data)
+		// 			// }
+		// 			// else {
+		// 			// 	console.log("an error occured")
+		// 			// }
+
+				
+		// 			console.log(http.responseText)
+					
+		// 		}
+		// })()
+
+		(function(){
+var http=new XMLHttpRequest();
+
+http.open('GET','config.json');
+
+http.send()
+
+http.onreadystatechange = function(){
+    // document.write(http.responseText)
+    if(http.responseText!=''){
+    	initializeApp()
+    }
+}
+})()
+		function initializeApp() {
+			alert("App Initialised")
+		}
+	</script>
+<!-- </body>
+</html> -->

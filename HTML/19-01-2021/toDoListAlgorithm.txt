@@ -1,0 +1,13 @@
+
+Algorithm to make todo list
+---------------------------
+
+1. create input field
+2. create add button
+3. add the todoList() method to the button
+4. create add(task) method to add the task to todoList() Method
+5. create remove(task) method to remove the task todoList() Method
+6. add the add(task) Method to todoList() method
+7. Store the task name value in array after add the task in todoList() Method
+8. create checkbox to add or remove the task and add the methods add(task) and remove(task) to it.
+9. if remove(task) performed the given task should be strikethrough and disable it for permanent.

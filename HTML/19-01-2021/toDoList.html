@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="taskName">
+		<button onclick="todoList()">Add</button>
+		<ol id="tasksContainer"></ol>
+	</form> 
+	<script type="text/javascript">
+		function todoList() {
+			event.preventDefault()
+			var tasks = []
+			var taskName = document.getElementById("taskName")
+			var tasksContainer = document.getElementById("tasksContainer")
+			var tasksObj = {
+				task_id: 1,
+				task_name: taskName.value
+			}
+			tasksContainer.innerHTML += `<input type='checkbox' id='task_status'><li style='display:inline'>${tasksObj.task_name}</li><br>`
+			taskName.value = ''
+		}
+		document.addEventListener('click',function(e) {
+			if(e.target.id == 'task_status') {
+				e.target.disabled = true
+				e.target.nextSibling.style.textDecoration = 'line-through'
+			}
+		})
+	</script>
+</body>
+</html>
