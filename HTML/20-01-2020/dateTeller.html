@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date Teller Task</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="date" id="date">
+		<button onclick="deltaTime()">Delta Time</button>
+	</form>
+	<p id="deltaTimeContainer"></p>
+	<script type="text/javascript">
+		function deltaTime() {
+			event.preventDefault()
+			const {floor, ceil, round, abs} = Math
+			const [hourFactor, minuteFactor, hourFactor, dayFactor, weekFactor] = [60, 60, 1000, 24, 7]
+			const {getTime, getFullYear} = new Date()
+				alert(getTime())
+			// var currentDate = new Date().getTime(),
+			// 	userEnteredDate = document.getElementById('date').value,
+			// 	userDate = new Date(userEnteredDate),
+			// 	deltaTimeContainer = document.getElementById('deltaTimeContainer')
+			// alert("secondDiff: "+Math.floor(currentDate-userDate)/1000)
+			// userDate = userDate.getDate()
+			// if(userDate <= currentDate) {
+			// 	var timeDifference = Math.abs(userDate - currentDate)
+			// 	var dateDifference = Math.ceil(timeDifference / (1000*3600*24))
+			// 	if(dateDifference) {
+			// 		document.getElementById('deltaTimeContainer').innerHTML = ''
+			// 	}
+			// 	}
+			// else {
+			// 	deltaTimeContainer.innerHTML= "You entered the future date"
+			// }
+		}
+	</script>
+</body>
+</html>
